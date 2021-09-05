@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Various attribute for crearing complete a from</title>
+</head>
+<body>
+	<form>    <!--Form হল একটা document যেটা user থেকে data input নেয় এবং processing এর জন্য server এ send করে-->
+              <!--Attribute হলো special word যা কিনা opening tag এর মাধ্যে থাকে। Attribute element এর behaviou control করে-->
+
+        <p> Input type text:<input type="Text"> </p>  <!-- User থেকে tax type input নেওয়ার জন্য-->
+        <!--type="text" = attribute, type = attribute name,  "text"=value--> 
+
+        <p> Email:<input type="Email"> </p>           <!-- User থেকে email type input নেওয়ার জন্য-->
+        <p> Checkbox:<input type="Checkbox"> </p>     <!-- User থেকে checkbox type input নেওয়ার জন্য-->
+        <p> Radio Option:<input type="Radio"> </p>    <!-- User থেকে email radio input নেওয়ার জন্য-->
+        <p> Password:<input type="Password"> </p>     <!-- User থেকে password type input নেওয়ার জন্য-->
+        <p> File:<input type="file"> </p>             <!-- User থেকে file type input নেওয়ার জন্য-->
+
+        <p> Image Only:<input type="file" accept="image/*"> </p>           <!-- User থেকে শুধু image type input নেওয়ার জন্য extra accept attribut use করতে হয়, /* দেওয়া মানে সব ধরনের image accepct করবে-->
+        <p> PNG Image Only:<input type="file" accept="image/png"> </p>     <!-- /png দেওয়া মানে শুধু png ধরনের image accepct করবে--> 
+        <p> PDFs Only:<input type="file" accept="application/pdf"> </p>    <!-- application/pdf দেওয়া মানে শুধু pdf ধরনের application accepct করবে--> 
+        <p> Submit:<input type="submit"> </p>
+        <p> Reset:<input type="reset"> </p>
+
+        <p> 
+        <textarea row="5" cols="50">   <!--textarea=text box creat করার জন্য-->
+
+        </textarea>
+        </p>
+
+        <p>
+        <select>  <!--Drop down menu bar create করার জন্য-->
+            <option disabled selected>Select an option</option>
+            <option>Option one</option>
+            <option>Option two</option>
+            <option>Option three</option>
+            <option>Option four</option>
+        </select>
+        </p>
+    </form>
+</body>
+</html>

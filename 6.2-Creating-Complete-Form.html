@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Creating a Complete Form </title>
+</head>
+<body>
+      <div>
+          <h1 style="text-align: center;">Online Job Application Form</h1>
+          <hr>
+          <p>Fill up tha form properly. Incomplete form will be discarded</p>
+
+          <form action="page-handler.php" method="POST">
+            <h2>Personal Information</h2>
+            <hr>
+            <p>We need your personal information to complete the job application process. Please fillup the fields below with correct information.</p>
+            <p>Username: <input type="text" name="username"></p>      <!-- Input teg এর সবচেয়ে গুরুত বেশি হলো type এর-->  
+            <p>Email Address: <input type="Email" name="email"></p>
+            <p>Address: <input type="text" name="address">
+            <select name="city">
+            <option disabled selected>Select Your City</option>     <!--disabled selected attribut use করাতে option টি disabal হয়ে গেছে-->
+            <option>Dhaka</option>
+            <option>Sylhet</option>
+            <option>Comilla</option>
+            <option>Khulna</option>
+            </select>
+            </p>
+
+            <h2>Job Selection</h2>
+            <hr>
+            <p>Select the job from the list below (You can apply for one job only):</p>   
+            <p>
+                Front-end Developer:<input type="Radio" name="job-selection" value="FD"> <br>  <!-- এখানে name attribute তিনটাই same তাই তিনটা 
+                                                                                                 Radio batun এর মধ্যে একটাই select করা যাবে-->
+                
+                Back-end Developer:<input type="Radio"name="job-selection"value="BD"> <br>
+                Full Stack web Developer:<input type="Radio"name="job-selection"value="FSD"> <br>
+            </p>
+
+            <h2>Your Expertise</h2>
+            <hr>
+            <p>Select the fields you are expert in. You can select more then one fields at a time.</p>
+            <p>
+                HTML:<input type="Checkbox" name="html" value="html">   <!-- এখানে name attribute তিনটাই আলাদা আলাদা তাই পাঁচটা Checkbox এর 
+                                                                           মধে সবগুলোই select করতে চাইলে করা যাবে-->
+                CSS:<input type="Checkbox"name="css" value="css">
+                JavaScript:<input type="Checkbox"name="js" value="js">
+                PHP:<input type="Checkbox"name="php" value="ohp">
+                SQL:<input type="Checkbox"name="sql" value="sql">
+            </p>
+
+            <h2>Upload photo and CV</h2>
+            <hr>
+            <p>Upload photo and CV here. Use PNG format for the image.</p>
+            <p>
+               Upload Image: <input type="file" accept="image/png"><br><br>
+               Upload CV : <input type="file" accept="application/pdf"> 
+            </p>
+            <hr>
+            <p>
+                Submit:<input type="submit"> 
+                Reset:<input type="reset">
+            </p>
+          </form>
+      </div>
+</body>
+</html>        
